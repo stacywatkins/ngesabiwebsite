@@ -2,6 +2,13 @@
  * Created by jpmeyer on 2017/08/16.
  */
 function sendEmail() {
+    var response = grecaptcha.getResponse();
+
+    if(response.length == 0) {
+        $("#enterCaptcha").show();
+        return;
+    }
+
     var data = {
         name: $("#name").val(),
         email: $("#email").val(),

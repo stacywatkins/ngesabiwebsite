@@ -398,7 +398,9 @@ http://www.templatemo.com/tm-492-app-starter
                     class="form-control" id="message" name="message" placeholder="Message" required=""
                     rows="3"></textarea>
 
-                <div class="g-recaptcha" data-sitekey="6LeQGi0UAAAAALvIlABzlp0dgo5bUkrbndJqpJEH"></div>
+            <p id="enterCaptcha" style="display: none; color: white;">Please complete the CAPTCHA challenge</p>
+
+            <div class="g-recaptcha" data-sitekey="6LeQGi0UAAAAALvIlABzlp0dgo5bUkrbndJqpJEH"></div>
 
                 <input class="form-control" name="submit" type="submit"
                                                 value="Send Message" onclick="sendEmail();" id="sendMailButton" />
