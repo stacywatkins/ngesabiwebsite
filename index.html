@@ -389,7 +389,8 @@ http://www.templatemo.com/tm-492-app-starter
                 <h2 class="modal-title">Contact Form</h2>
             </div>
 
-            <form action="#" method="post"><input class="form-control" id="name" name="name" placeholder="Your Name"
+            <!--<form action="#" method="post">-->
+                <input class="form-control" id="name" name="name" placeholder="Your Name"
                                                   required="" type="text"/> <input class="form-control" id="email"
                                                                                    name="email"
                                                                                    placeholder="Email Address"
@@ -400,7 +401,8 @@ http://www.templatemo.com/tm-492-app-starter
                 <div class="g-recaptcha" data-sitekey="6LeQGi0UAAAAALvIlABzlp0dgo5bUkrbndJqpJEH"></div>
 
                 <input class="form-control" id="submit" name="submit" type="submit"
-                                                value="Send Message"/></form>
+                                                value="Send Message" onclick="sendEmail();" />
+            <!--</form>-->
         </div>
     </div>
 </div>
@@ -413,5 +415,6 @@ http://www.templatemo.com/tm-492-app-starter
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/sendmail.js"></script>
 </body>
 </html>
