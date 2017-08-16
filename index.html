@@ -22,6 +22,9 @@ http://www.templatemo.com/tm-492-app-starter
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700" rel="stylesheet" type="text/css"/>
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet"/>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 <body data-offset="50" data-spy="scroll" data-target=".navbar-collapse"><!-- PRE LOADER -->
 <div class="preloader">
@@ -392,7 +395,11 @@ http://www.templatemo.com/tm-492-app-starter
                                                                                    placeholder="Email Address"
                                                                                    required="" type="email"/><textarea
                     class="form-control" id="message" name="message" placeholder="Message" required=""
-                    rows="3"></textarea> <input class="form-control" id="submit" name="submit" type="submit"
+                    rows="3"></textarea>
+
+                <div class="g-recaptcha" data-sitekey="6LeQGi0UAAAAALvIlABzlp0dgo5bUkrbndJqpJEH"></div>
+
+                <input class="form-control" id="submit" name="submit" type="submit"
                                                 value="Send Message"/></form>
         </div>
     </div>
