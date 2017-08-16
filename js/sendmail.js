@@ -10,10 +10,16 @@ function sendEmail() {
 
     var url = 'http://ngesabi.co.za/php/mail.php';
 
+    $("#sendMailButton").hide();
+    $("#sendingMail").show();
     $.post(url, data)
         .done(function(data) {
+            $("#sendingMail").show();
+            data = JSON.parse(data);
+            console.log(data);
             if (data.status === 200) {
-                $("#modal1").modal('close');
+                $("#modal1").modal('hide');
+                $("#thankyoumodal").modal('show');
             } else {
                 if (data.status === 400) {
                     $.each(data.errors, function(error, value) {
@@ -22,4 +28,8 @@ function sendEmail() {
                 }
             }
         })
+        .always(function() {
+            $("#sendMailButton").show();
+            $("#sendingMail").hide();
+        });
 }

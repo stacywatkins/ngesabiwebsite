@@ -400,8 +400,29 @@ http://www.templatemo.com/tm-492-app-starter
 
                 <div class="g-recaptcha" data-sitekey="6LeQGi0UAAAAALvIlABzlp0dgo5bUkrbndJqpJEH"></div>
 
-                <input class="form-control" id="submit" name="submit" type="submit"
-                                                value="Send Message" onclick="sendEmail();" />
+                <input class="form-control" name="submit" type="submit"
+                                                value="Send Message" onclick="sendEmail();" id="sendMailButton" />
+                <p id="sendingMail" style="display: none; color: white;">Please wait...</p>
+            <!--</form>-->
+        </div>
+    </div>
+</div>
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="thankyoumodal" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content modal-popup">
+            <div class="modal-header">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span
+                        aria-hidden="true">&times;</span></button>
+
+                <h2 class="modal-title">Thank you</h2>
+            </div>
+            <p style="color: white;">
+                Thanks for contacting us, we'll get back to you as soon as possible.
+            </p>
+            <hr />
+
+
+            <a class='btn btn-default' data-dismiss="modal">Close</a>
             <!--</form>-->
         </div>
     </div>
