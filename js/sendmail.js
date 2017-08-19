@@ -12,6 +12,7 @@ function sendEmail() {
     var data = {
         name: $("#name").val(),
         email: $("#email").val(),
+        phone: $("#phone").val(),
         message: $("#message").val()
     };
 
